@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css.css" />
+    <script src="https://kit.fontawesome.com/96a4ee7c55.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+
+        <div class="container">
+            <ul>
+              <li><a href="#">home</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">portfolio</a></li>
+              <li><a href="#">services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      
+    <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="phoklab.JPG" alt="photo1" />
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p>
+                I am a creative designer and developer, who aims to work with small businesses and marginalized communities to bring their passions to life. I offer both design and development services of web applications or websites! </p>
+    
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                <p class="tab-links" onclick="opentab('education')">education</p>
+                <p class="tab-links" onclick="opentab('experience')">experience</p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>UI/UX<br></span> DesigniningWeb/App interfaces</li>
+                  <li><span>Web Development<br></span>Web App interfaces</li>
+                  <li><span>App Development<br></span>Building Android/ios apps</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li><span>2022-current<br></span> UI/UX KLAB TRAINING at University of Rwanda Huye campus</li>
+                  <li><span>2021-2022<br></span>workig on the different classand academic projects</li>
+                  <li><span>2019-2021<br></span></li> working on my own projects</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li><span>2019<br></span>senior 6 certificate in MCE</li>
+                  <li><span>2024<br></span>Bachelor of Science in Computer Engineering(Computer Engineering) from University
+                    of Rwanda</li>
+                  <li><span>2026<br></span></li> ---------------------------</li>
+                </ul>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="social-icons">
+        <a href="mailto:imanariyobaptiste@gmail.com"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-sharp fa-solid fa-envelopes-bulk"></i></a>
+        <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+        <a href="#"><i class="fa-solid fa-phone"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+</body>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+
+    }
+  </script>
+</html>
